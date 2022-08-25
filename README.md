@@ -1,3 +1,4 @@
-# LCKSpring2021DataAnalysis
+# LCK Spring 2021 Data Analysis
 
-Hello World test
+This Data Analysis is presented in order to give recommendation to the teams participating in the LCK Spring 2021 in terms of Team Compositions, Player champions ban,
+Team side selection.
