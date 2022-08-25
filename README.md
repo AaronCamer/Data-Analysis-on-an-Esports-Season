@@ -41,7 +41,12 @@ Then, we calculate the pick and ban rate using the formula, ((ban + games) / 215
 
 ![image](https://user-images.githubusercontent.com/74399142/186640062-0cec7e84-ad1b-4297-8537-a15072399579.png)
 
-Using the library __tidyverse__, we created a bar graph to plot the pick and ban rate of champions in the LCK Spring 2021.
+## Data Visualization
+
+### Pick and Ban Rate Graph
+![HighestPB](https://user-images.githubusercontent.com/74399142/186644582-9d2008a9-32d6-4e42-b1e1-85d0db5c8b97.png)
+
+
 
 
 
