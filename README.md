@@ -18,13 +18,13 @@ I would like to investigate the League of Legends competitive scene in Korea. I 
 
 For a better understanding of the study, the following terms are defined:
 
-__Champions__ - refers to the characters used in the game.\n
-__CS__ - refers to creep score, how many minions were killed by a player, it is related with the gold accumulated by the player.\n
-__CS/M__ - refers to how many minions were killed by a player per minute.\n
-__GOLD/M__ - refers to the gold per minute of a player.\n
-__KDA ratio__ - refers to the ratio of Kills, Deaths, and Assists of a player.\n
-__Players__ - refers to the person who plays under a certain team.\n
-__Win rate__ - refers to the percentage of win of each team.\n
+__Champions__ - refers to the characters used in the game. <br/>
+__CS__ - refers to creep score, how many minions were killed by a player, it is related with the gold accumulated by the player. <br/>
+__CS/M__ - refers to how many minions were killed by a player per minute. <br/>
+__GOLD/M__ - refers to the gold per minute of a player. <br/>
+__KDA ratio__ - refers to the ratio of Kills, Deaths, and Assists of a player.<br/>
+__Players__ - refers to the person who plays under a certain team. <br/>
+__Win rate__ - refers to the percentage of win of each team. <br/>
 
 ## Calculation of the Data and Analysis
 
