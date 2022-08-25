@@ -1,4 +1,4 @@
-# LCK Spring 2021 Data Analysis
+# LCK Spring 2021 League of Legends Data Analysis
 
 This data analysis is presented in order to give recommendation to the teams participating in the LCK Spring 2021 in terms of Team Compositions, Player champions ban,
 Team side selection.
@@ -60,9 +60,4 @@ Across 215 total games in LCK, Gnar has the highest pb with a 89.8% pick and ban
 
 But even though Gnar has a highest PB rate, Maokai has the highest win rate, and Gnar is not included in the top 20. This may imply that players may have
 been pick Gnar but continously losing the game. It also shows that in the Pick and Ban Rate Graph, Taliyah is the only one that had a high pick ban rate as well as high win rate. This shows that Taliyah is successful during the season, and teams might want to start picking this champion.
-
-
-
-
-
 
