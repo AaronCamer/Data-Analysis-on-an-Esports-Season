@@ -41,10 +41,26 @@ Then, we calculate the pick and ban rate using the formula, ((ban + games) / 215
 
 ![image](https://user-images.githubusercontent.com/74399142/186640062-0cec7e84-ad1b-4297-8537-a15072399579.png)
 
+### Win Rate of Champions
+Same with Pick and Ban rate, we filtered out the total number of games with 40 and above, but now, we calculate the win rate of champions.
+We calculate the win rate of champions by dividing the wins and games of a champion then multiply by 100. In this case, we get:
+![image](https://user-images.githubusercontent.com/74399142/186645303-2d9b997d-b9ae-451c-b98d-15da1bea9ef5.png)
+
+
+
 ## Data Visualization
 
 ### Pick and Ban Rate Graph
 ![HighestPB](https://user-images.githubusercontent.com/74399142/186644582-9d2008a9-32d6-4e42-b1e1-85d0db5c8b97.png)
+
+Across 215 total games in LCK, Gnar has the highest pb with a 89.8% pick and ban rate, meaning that it must be a highly contested champion pick.
+
+### Win Rate Graph
+![HighestWR](https://user-images.githubusercontent.com/74399142/186645929-15459073-f5af-454d-8c00-9c6486a87e00.png)
+
+But even though Gnar has a highest PB rate, Maokai has the highest win rate, and Gnar is not included in the top 20. This may imply that players may have
+been pick Gnar but continously losing the game. It also shows that in the Pick and Ban Rate Graph, Taliyah is the only one that had a high pick ban rate as well as high win rate. This shows that Taliyah is successful during the season, and teams might want to start picking this champion.
+
 
 
 
