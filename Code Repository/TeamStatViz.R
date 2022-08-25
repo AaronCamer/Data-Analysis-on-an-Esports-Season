@@ -1,16 +1,20 @@
+#import the needed packages
 library(janitor)
 library(tidyverse)
 
 team_stats <- read.csv(file.choose(), header = T)
 head(team_stats)
 
+#Changing the character class into factor
 team_stats$side_won <- as.factor(team_stats$side_won)
 summary(team_stats)
 
+# Counting the win in each side
 new_team_stats <- team_stats %>% count(team_stats$side_won)
 View(new_team_stats)
 new_team_stats
 
+# calculating the win rate in each side
 new_team_stats <- mutate(new_team_stats, winrate=(new_team_stats$n / 215)*100)
 new_team_stats
 
