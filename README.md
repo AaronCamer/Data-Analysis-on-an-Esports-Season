@@ -49,19 +49,24 @@ We calculate the win rate of champions by dividing the wins and games of a champ
 Here we manually added values to the csv file, TeamStats.csv since the scraped material from the website is that, the winning team is only highlighted on the column, therefore, we added R and B values in order to know which side won, and there we calculate the win rate of playing in Blue and Red side.
 
 First import the csv we created new (TeamStats_Rev.csv)
+
 ![image](https://user-images.githubusercontent.com/74399142/186650554-66ced776-9130-4c5d-8e09-0ace9bdcc6d0.png)
 
 Since, side_won is in the character class, we have to turn it into a factor.
+
 ![image](https://user-images.githubusercontent.com/74399142/186651193-b5786cda-bdbf-4b5d-af27-05c9e9ac0ef3.png)
 
 After that, we need to count the number of side_won and put it onto another table.
+
 ![image](https://user-images.githubusercontent.com/74399142/186651391-56fd5c65-89f8-4124-af14-c451414a1400.png)
 
 In this case, we put it in the new_team_stats table.
 Now, we calculate the win percentage, which is (n / 215)*100, 215 is the total number of games.
+
 ![image](https://user-images.githubusercontent.com/74399142/186651738-7484e4fb-25fc-477b-9da9-006aa3cf4417.png)
 
 Column names are inappropriate so we use the clean_names() function from the janitor library.
+
 ![image](https://user-images.githubusercontent.com/74399142/186652231-1480122c-eb8d-49bf-9df9-8eb5f2aea806.png)
 
 ## Data Visualization
