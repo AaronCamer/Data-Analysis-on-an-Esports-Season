@@ -46,7 +46,24 @@ Same with Pick and Ban rate, we filtered out the total number of games with 40 a
 We calculate the win rate of champions by dividing the wins and games of a champion then multiply by 100. In this case, we get:
 ![image](https://user-images.githubusercontent.com/74399142/186645303-2d9b997d-b9ae-451c-b98d-15da1bea9ef5.png)
 
+### Win Rate of BLUE and RED side
+Here we added values to the csv files, TeamStats.csv since the scraped material from the website is that, the winning team only highlighted the winning team on the column, therefore, we added R and B values in order to know which side won, and there we calculate the win rate of playing in Blue and Red side.
 
+First import the csv we created new (TeamStats_Rev.csv)
+![image](https://user-images.githubusercontent.com/74399142/186650554-66ced776-9130-4c5d-8e09-0ace9bdcc6d0.png)
+
+Since, side_won is in the character class, we have to turn it into a factor.
+![image](https://user-images.githubusercontent.com/74399142/186651193-b5786cda-bdbf-4b5d-af27-05c9e9ac0ef3.png)
+
+After that, we need to count the number of side_won and put it onto another table.
+![image](https://user-images.githubusercontent.com/74399142/186651391-56fd5c65-89f8-4124-af14-c451414a1400.png)
+
+In this case, we put it in the new_team_stats table.
+Now, we calculate the win percentage, which is (n / 215)*100, 215 is the total number of games.
+![image](https://user-images.githubusercontent.com/74399142/186651738-7484e4fb-25fc-477b-9da9-006aa3cf4417.png)
+
+Column names are inappropriate so we use the clean_names() function from the janitor library.
+![image](https://user-images.githubusercontent.com/74399142/186652231-1480122c-eb8d-49bf-9df9-8eb5f2aea806.png)
 
 ## Data Visualization
 
@@ -60,4 +77,7 @@ Across 215 total games in LCK, Gnar has the highest pb with a 89.8% pick and ban
 
 But even though Gnar has a highest PB rate, Maokai has the highest win rate, and Gnar is not included in the top 20. This may imply that players may have
 been pick Gnar but continously losing the game. It also shows that in the Pick and Ban Rate Graph, Taliyah is the only one that had a high pick ban rate as well as high win rate. This shows that Taliyah is successful during the season, and teams might want to start picking this champion.
+
+### Side Selection Win Graph
+
 
