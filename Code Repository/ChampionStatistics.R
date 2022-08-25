@@ -44,3 +44,32 @@ champion_stats <- champion_stats %>% rename(total_games = g, ban = b, win = w, l
 
 #putting into a csv file for easier reading
 write.csv(champion_stats,"C:\\Users\\Admin\\Documents\\ChampionStats.csv", row.names = F)
+
+# Filtering data
+champion_stats %>% filter(total_games > 40)
+
+#Computation for the Pick and Ban rate of the Champions
+champion_stats <- mutate(champion_stats, pickban_rate = (champion_stats$ban + champion_stats$games)/215 * 100)
+champion_stats
+
+# Visualization of Data using Tidyverse's GGPLOT()
+champion_stats %>%
+  mutate(pickban_rate) %>%
+  arrange(desc(pickban_rate)) %>%
+  head(20) %>%
+  mutate(champion = fct_reorder(champion, pickban_rate)) %>%
+  ggplot() + geom_bar (aes(y = champion, x = pickban_rate), stat = "Identity") + 
+  labs(x = "Pick and Ban Rate", title = "Highest Pick and Ban Rate Champions in LCK 2021 Spring", caption = "Source: lol.gamepedia.com")
+
+#Computation for the Win Rate of the Champions
+champion_stats <- mutate(champion_stats, winrate = (champion_stats$win / champion_stats$games)*100)
+champion_stats %>% filter (total_games > 40)
+
+# Visualization of Data using Tidyverse's GGPLOT()
+champion_stats %>%
+  mutate(winrate) %>%
+  arrange(desc(winrate)) %>%
+  head(20) %>%
+  mutate(champion = fct_reorder(champion, winrate)) %>%
+  ggplot() + geom_bar (aes(y = champion, x = winrate), stat = "Identity") + 
+  labs(x = "Win Rate", title = "Highest Win Rate Champions in LCK 2021 Spring", caption = "Source: lol.gamepedia.com")
