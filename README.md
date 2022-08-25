@@ -1,7 +1,6 @@
 # LCK Spring 2021 League of Legends Data Analysis
 
-This data analysis is presented in order to give recommendation to the teams participating in the LCK Spring 2021 in terms of Team Compositions, Player champions ban,
-Team side selection.
+This data analysis is presented in order to give recommendation to the teams participating in the LCK Spring 2021 in terms of Team Compositions, Champions banned or picked, and Team side selection.
 
 ## Introduction
 
@@ -47,7 +46,7 @@ We calculate the win rate of champions by dividing the wins and games of a champ
 ![image](https://user-images.githubusercontent.com/74399142/186645303-2d9b997d-b9ae-451c-b98d-15da1bea9ef5.png)
 
 ### Win Rate of BLUE and RED side
-Here we added values to the csv files, TeamStats.csv since the scraped material from the website is that, the winning team only highlighted the winning team on the column, therefore, we added R and B values in order to know which side won, and there we calculate the win rate of playing in Blue and Red side.
+Here we manually added values to the csv file, TeamStats.csv since the scraped material from the website is that, the winning team is only highlighted on the column, therefore, we added R and B values in order to know which side won, and there we calculate the win rate of playing in Blue and Red side.
 
 First import the csv we created new (TeamStats_Rev.csv)
 ![image](https://user-images.githubusercontent.com/74399142/186650554-66ced776-9130-4c5d-8e09-0ace9bdcc6d0.png)
@@ -80,4 +79,11 @@ been pick Gnar but continously losing the game. It also shows that in the Pick a
 
 ### Side Selection Win Graph
 
+![image](https://user-images.githubusercontent.com/74399142/186719335-d635eaed-26f0-4d27-aa29-c446de8a0e24.png)
 
+In this graph, we can see that blue side has a 15.34884% higher win rate than
+on the red side, meaning that teams in LCK find more success in the blue side rather than the red side.
+
+## Conclusion
+
+All of this analysis may help the teams in deciding which side they may choose, champion and team composition they make. It is also shown in the analysis how data manipulation works when working with R, such as calculating the win rate, pick and ban rate of the champions, etc. 
