@@ -32,7 +32,16 @@ Win rate - refers to the percentage of win of each team.
 This is the data analysis of champions during the LCK Spring 2021, with a total of 215 games played with 98 champions contested.
 
 ### Pick and Ban Rate
-his is where we calculated the Pick and Ban Rate of Champions picked during the tournament.
+This is where we calculated the Pick and Ban Rate of Champions picked during the tournament.
 First, we filter out the data of champions with a total game of 40 or more, for accuracy, since having a very low play rate and high win rate, differs from high play rate.
 
 ![image](https://user-images.githubusercontent.com/74399142/186635570-fa385169-463a-4424-aba8-68583d763fd5.png)
+
+Then, we calculate the pick and ban rate using the formula, ((ban + games) / 215 * 100) (215 means the total number of games in LCK).
+
+![image](https://user-images.githubusercontent.com/74399142/186640062-0cec7e84-ad1b-4297-8537-a15072399579.png)
+
+Using the library __tidyverse__, we created a bar graph to plot the pick and ban rate of champions in the LCK Spring 2021.
+
+
+
